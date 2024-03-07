@@ -96,7 +96,7 @@
       "Value": "LUCR3"
     },
     "Severity": "MEDIUM",
-    "Description": "An attacker could potentially exploit 'GetSecretValue.*exec-env/CloudShell' to access and retrieve sensitive secrets within the CloudShell execution environment, leading to unauthorized data exposure or misuse for malicious purposes."
+    "Description": "If an attacker can stop logging, they might be able to perform malicious actions without leaving a trace in the logs. This makes it harder to identify and respond to security incidents."
   },
   {
     "Name": "Cloudtrail Evasion",
