@@ -1,0 +1,23 @@
+{
+  "AWS": [
+    {
+      "bucket": "cloudtrail-logs-00000000-ffffff",
+      "prefix": [
+        "testTrails/AWSLogs/00000000/CloudTrail/eu-west-1/2024/03/03",
+        "testTrails/AWSLogs/00000000/CloudTrail/us-west-1/2024/03/04"
+      ]
+    },
+    {
+      "bucket": "aws-kosova-us-east-1-00000000"
+    }
+
+  ],
+  "AZURE": [
+    {
+      "accountname": "logs",
+      "container": [
+        "cloudgrapple"
+      ]
+    }
+  ]
+}

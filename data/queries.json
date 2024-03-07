@@ -1,0 +1,586 @@
+[
+  {
+    "Name": "CloudShell secrets file download",
+    "Query": "GetFileDownloadUrls.*secrets_",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "HIGH",
+    "Description": "Review use of CloudShell. Permiso seldom witnesses use of CloudShell outside of known attackers.This however may be a part of your normal business use case."
+  },
+  {
+    "Name": "Diassociate a master account",
+    "Query": "DisassociateFromMasterAccount",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker exploiting the DisassociateFromMasterAccount eventName might gain unauthorized access, escalate privileges, disrupt operations, manipulate or steal data, and potentially impersonate legitimate entities within the system."
+  },
+  {
+    "Name": "Enabling Serial ConsoleAccess",
+    "Query": "EnableSerialConsoleAccess",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker could potentially leverage 'EnableSerialConsoleAccess' to bypass regular security measures and gain unauthorized entry or control over a system through direct access to its serial console."
+  },
+  {
+    "Name": "GuardDuty DeleteInvitations",
+    "Query": "DeleteInvitations",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker could abuse 'DeleteInvitations' to remove pending invitations, potentially disrupting collaboration or gaining unauthorized access by eliminating traces of attempted or ongoing invitations within a system or platform."
+  },
+  {
+    "Name": "GuardDuty DeleteDetector",
+    "Query": "DeleteDetector",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker might misuse 'DeleteDetector' to initiate unauthorized deletion operations within a system, potentially causing data loss or disruption."
+  },
+  {
+    "Name": "ReplaceIamInstanceProfileAssociation",
+    "Query": "ReplaceIamInstanceProfileAssociation",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "LOW",
+    "Description": "An attacker could potentially misuse 'ReplaceIamInstanceProfileAssociation' to substitute an existing IAM instance profile association, gaining unauthorized permissions or access to resources associated with that profile."
+  },
+  {
+    "Name": "UpdateServiceSetting",
+    "Query": "UpdateServiceSetting",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "LOW",
+    "Description": "An attacker could misuse UpdateServiceSetting to change critical service configurations, potentially leading to misconfigurations that may impact the availability, reliability, or security of the service."
+  },
+  {
+    "Name": "Download Secrets from CloudShell",
+    "Query": "GetSecretValue.*exec-env*CloudShell",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "HIGH",
+    "Description": "An attacker could potentially exploit 'GetSecretValue.*exec-env/CloudShell' to access and retrieve sensitive secrets within the CloudShell execution environment, leading to unauthorized data exposure or misuse for malicious purposes."
+  },
+  {
+    "Name": "Cloudtrail Evasion",
+    "Query": "StopLogging",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker could potentially exploit 'GetSecretValue.*exec-env/CloudShell' to access and retrieve sensitive secrets within the CloudShell execution environment, leading to unauthorized data exposure or misuse for malicious purposes."
+  },
+  {
+    "Name": "Cloudtrail Evasion",
+    "Query": "DeleteTrail",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "Threat Actor",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "An attacker could misuse DeleteTrail to tamper with or delete log entries, attempting to cover their tracks and evade detection by erasing evidence of their activities."
+  },
+  {
+    "Name": "S3 Browser usage",
+    "Query": "S3 Browser 9.5.5",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR1"
+    },
+    "Severity": "LOW",
+    "Description": "S3 Browser 9.5.5 usage can be an indicator of LUCR1 attack. Since this group preferes using older version of S3 Browser."
+  },
+
+  {
+    "Name": "Malicious IAM User",
+    "Query": "ses_legion",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Legion"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "system",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "ses_xcatze",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "AdminsDDefault",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "AdminsDDefault",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "Kontolz",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "ses_fucked",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "ses_xxx",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "jSDSsajsnhjjjjjjwyyw",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious ARN",
+    "Query": "arn:aws:iam::320406895696:user/Kontolz",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "pubg",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "snoopdog",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "iDevXploit",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "Xproady",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "administrateurs",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "Myl3gion552014",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Legion"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM User",
+    "Query": "noob",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Legion"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious AWS Account ID",
+    "Query": "320406895696",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TOOL",
+      "Value": "androxgh0st-greenbot"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Malicious IAM Group",
+    "Query": "SESAdminGroup",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Legion"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "s3_secret",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": "Typical query searched by LUCR3 Threat Actor"
+  },
+  {
+    "Name": "New InboxRule.*DeleteMessage",
+    "Query": "New-InboxRule",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Set TransportRule.*DeleteMessage",
+    "Query": "Set-TransportRule",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "New-TransportRule.*DeleteMessage",
+    "Query": "New-TransportRule",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Enable-InboxRule.*DeleteMessage",
+    "Query": "Enable-InboxRule.*DeleteMessage",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "GMAIL in MFA",
+    "Query": "@gmail.com",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "@gmail.com",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "esxi root@",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "okta_key",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "SNOWFLAKE_",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "api.cloudflare.com",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "sendgrid_",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "shodan_api",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "administrator@vsphere.local",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "aws_access_key_id",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "user database",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "confidential",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "vault password",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "securestring",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "s3_secret",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "twilio_api_key",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "crowdstrike api",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "LUCR3 Searches",
+    "Query": "AKIA*",
+    "Source": "AZURE",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LUCR3"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  }  
+]
