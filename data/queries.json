@@ -107,7 +107,7 @@
       "Value": "LUCR3"
     },
     "Severity": "MEDIUM",
-    "Description": "If an attacker can stop logging, they might be able to perform malicious actions without leaving a trace in the logs. This makes it harder to identify and respond to security incidents."
+    "Description": "An attacker could misuse DeleteTrail to tamper with or delete log entries, attempting to cover their tracks and evade detection by erasing evidence of their activities"
   },
   {
     "Name": "S3 Browser usage",
