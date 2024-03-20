@@ -1,4 +1,7 @@
+![LogLicker](https://permiso.io/hubfs/Cloud-Grappler.png "CloudGrappler Logo")
 # CloudGrappler
+**Permiso:** https://permiso.io  
+**Read our release blog:** https://permiso.io/blog/cloudgrappler-a-powerful-open-source-threat-detection-tool-for-cloud-environments
 
 CloudGrappler is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in popular cloud environments such as AWS and Azure.
 
