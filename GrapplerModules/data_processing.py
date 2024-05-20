@@ -74,6 +74,8 @@ def data_source(data_input, queries, source_type, json_output , start_date, end_
         data_type = data_input.get(source_type.upper(), [])
         if data_type:
             service_type(data_type, queries, json_output, source_type, start_date, end_date, file_size)
+        elif len(data_type) == 0:
+            print("")
         else:
             print(f"Query source value \033[1;31m{source_type}\033[0m does not match any source value in data_sources.json (Should be one of the following values: \033[1;31m{valid_source_types}\033[0m )")
 
@@ -87,12 +89,14 @@ def service_type(data_type, queries, json_output, source_type, start_date, end_d
         if bucket:
             if prefixes != None:
                 for prefix in prefixes:
-                
-                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size)
+                    
+                    dummy = "aws-cloudtrail-logs-012893bhnbhvh/prefix/AWSLogs/032894781/CloudTrail/eu-west-1/2024/02/17"
+                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size,dummy)
             else:
                     prefix = False
-                    
-                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size)
+
+                    dummy = "aws-codestar-eu-east-3-032894781"
+                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size,dummy)
 
         elif accountname:
             if containers != None:

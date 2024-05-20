@@ -167,17 +167,6 @@
   },
   {
     "Name": "Malicious IAM User",
-    "Query": "AdminsDDefault",
-    "Source": "AWS",
-    "Intel": {
-      "Type": "TOOL",
-      "Value": "androxgh0st-greenbot"
-    },
-    "Severity": "MEDIUM",
-    "Description": ""
-  },
-  {
-    "Name": "Malicious IAM User",
     "Query": "Kontolz",
     "Source": "AWS",
     "Intel": {
@@ -541,17 +530,6 @@
   },
   {
     "Name": "LUCR3 Searches",
-    "Query": "s3_secret",
-    "Source": "AZURE",
-    "Intel": {
-      "Type": "TTP",
-      "Value": "LUCR3"
-    },
-    "Severity": "MEDIUM",
-    "Description": ""
-  },
-  {
-    "Name": "LUCR3 Searches",
     "Query": "twilio_api_key",
     "Source": "AZURE",
     "Intel": {
@@ -582,5 +560,83 @@
     },
     "Severity": "MEDIUM",
     "Description": ""
-  }  
+  },
+  {
+    "Name": "Gui-Vil Intel",
+    "Query": "zindanjelek",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Gui-Vil"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  }
+  ,
+  {
+    "Name": "Gui-Vil Intel",
+    "Query": "bareskrim",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Gui-Vil"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Obsidian Research SaaS Ransomeware",
+    "Query": "_0mega_prevent_leakage",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "TA"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Intel",
+    "Query": "sysall",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "TA"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "Venom_SMS",
+    "Query": "SMTPEX",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Venom_SMS"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "TA",
+    "Query": "opsecx12",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "TA"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  },
+  {
+    "Name": "TA",
+    "Query": "s3mize",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "TA"
+    },
+    "Severity": "MEDIUM",
+    "Description": ""
+  }
 ]
