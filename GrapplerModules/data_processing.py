@@ -88,15 +88,11 @@ def service_type(data_type, queries, json_output, source_type, start_date, end_d
 
         if bucket:
             if prefixes != None:
-                for prefix in prefixes:
-                    
-                    dummy = "aws-cloudtrail-logs-012893bhnbhvh/prefix/AWSLogs/032894781/CloudTrail/eu-west-1/2024/02/17"
-                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size,dummy)
+                for prefix in prefixes:   
+                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size)
             else:
                     prefix = False
-
-                    dummy = "aws-codestar-eu-east-3-032894781"
-                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size,dummy)
+                    run_process("cloudtrail", bucket, prefix, queries, json_output, source_type, start_date, end_date, file_size)
 
         elif accountname:
             if containers != None:
