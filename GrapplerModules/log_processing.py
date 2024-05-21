@@ -64,7 +64,13 @@ def run_process(log_type, cloud_arg1, cloud_arg2, query, json_output, source_typ
         file_parser(result, cloud_arg1, cloud_arg2, json_output, source_type, logs)
 
     except subprocess.CalledProcessError as e:
+        print(f"Command '{e.cmd}' returned non-zero exit status {e.returncode}.")
+        print(f"stderr: {e.stderr}")
+    except FileNotFoundError as e:
+        print(f"Command not found: {e}")
+    except PermissionError as e:
+        print(f"Permission denied: {e}")
         print(
         f"\033[1;31mTry configuring creds again with `aws config` or `az login`\033[0m \n")
-        print(f"Process failed because did not return a successful return code {e}. \n ")
-        sys.exit(1)
+    except Exception as e:
+        print(f"Error occurred: {e}")
