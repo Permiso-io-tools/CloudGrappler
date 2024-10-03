@@ -1,5 +1,863 @@
 [
   {
+    "Name": "LLMHijacking Indicator",
+    "Query": "python-urllib3/2.0.7",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "axios/1.7.4",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "python-urllib3/2.0.5",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.11 aiohttp/3.9.5",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.11 aiohttp/3.9.3",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.12 aiohttp/3.9.5",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "axios/1.6.1",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.11 aiohttp/3.9.1",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.12 aiohttp/3.9.1",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.12 aiohttp/3.9.3",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.12 aiohttp/3.9.3",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "Python/3.12 aiohttp/3.9.3",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "InvokeModelWithResponseStream",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "InvokeModel",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "ListFoundationModelAgreementOffers",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "ListFoundationModelAgreementOffers",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "CreateFoundationModelAgreement",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "GetFoundationModelAvailability",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "ListInferenceProfiles",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "ListFoundationModels",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "GetModelInvocationLoggingConfiguration",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "PutFoundationModelEntitlement",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "PutUseCaseForModelAccess",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "GetUseCaseForModelAccess",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "103.136.147.217",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "103.136.147.219",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "103.216.220.23",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "103.216.220.43",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "104.28.202.29",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "104.28.202.30",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "104.28.219.72",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "104.28.232.2",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "119.94.179.194",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "122.53.224.172",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "124.104.213.208",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "124.83.121.30",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "138.199.43.100",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "143.244.47.70",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "143.244.47.87",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.165.189",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.165.216",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.166.233",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.168.125",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.168.152",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.168.253",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.171.152",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.185.24",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "146.70.185.61",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "148.251.255.77",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "156.146.54.85",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "173.205.85.53",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "173.205.93.11",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.160.171",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.161.165",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.161.78",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.161.87",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.162.211",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.163.185",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.163.242",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.163.34",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.165.245",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.167.19",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.167.237",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.167.87",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.172.143",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.172.17",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.172.58",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "180.191.173.122",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "194.48.248.108",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "198.44.136.117",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "198.44.136.222",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "3.223.72.184",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "31.171.154.59",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "34.211.200.85",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "44.227.217.144",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "45.85.144.253",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "45.87.213.230",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
+    "Name": "LLMHijacking Indicator",
+    "Query": "194.48.248.108",
+    "Source": "AWS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "LLMJacking"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
+  },
+  {
     "Name": "CloudShell secrets file download",
     "Query": "GetFileDownloadUrls.*secrets_",
     "Source": "AWS",
@@ -120,7 +978,6 @@
     "Severity": "LOW",
     "Description": "S3 Browser 9.5.5 usage can be an indicator of LUCR1 attack. Since this group preferes using older version of S3 Browser."
   },
-
   {
     "Name": "Malicious IAM User",
     "Query": "ses_legion",
@@ -571,8 +1428,7 @@
     },
     "Severity": "MEDIUM",
     "Description": ""
-  }
-  ,
+  },
   {
     "Name": "Gui-Vil Intel",
     "Query": "bareskrim",
