@@ -1,11 +1,10 @@
 from GrapplerModules.intel import *
 
 
-def file_parser(result, cloud_arg1, cloud_arg2,json_output, source_type, logs):
-
+def file_parser(result, cloud_arg1, cloud_arg2,json_output, source_type, intel):
       def remove_line_from_stdout(result, pattern):
    
-         filtered_lines = (line for line in result.stdout.split('\n') if not line.startswith(pattern) and not line.endswith('...'))
+         filtered_lines = (line for line in result.split('\n') if not line.startswith(pattern) and not line.endswith('...'))
          modified_output_stdout = '\n'.join(filtered_lines)
          return modified_output_stdout
 
@@ -20,4 +19,4 @@ def file_parser(result, cloud_arg1, cloud_arg2,json_output, source_type, logs):
 
       formatted_output = "[" + formatted_output + "]"
 
-      process_data(formatted_output,cloud_arg1, cloud_arg2,json_output, source_type )
+      process_data(formatted_output,cloud_arg1, cloud_arg2,json_output, source_type, intel)

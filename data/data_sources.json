@@ -10,7 +10,6 @@
     {
       "bucket": "aws-kosova-us-east-1-00000000"
     }
-
   ],
   "AZURE": [
     {
@@ -18,6 +17,11 @@
       "container": [
         "cloudgrapple"
       ]
+    }
+  ],
+  "GCP": [
+    {
+      "gcp_bucket": "buketi"
     }
   ]
 }

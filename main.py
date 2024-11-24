@@ -1,19 +1,12 @@
 # main.py
 
 import argparse
+import sys
+import time
 from GrapplerModules.data_processing import process_data, generic_function
 from GrapplerModules.log_processing import run_grep_once
 import subprocess
 
-
-
-def check_for_updates():
-    subprocess.run(['git', 'pull'])
-    local_commit = subprocess.run(['git', 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
-    remote_commit = subprocess.run(['git', 'ls-remote', 'origin', 'HEAD'], capture_output=True, text=True).stdout.split()[0]
-    
-    if local_commit != remote_commit:
-        print("New changes are available. Do you want to pull the latest changes?")
 
 def main():
 
@@ -62,7 +55,10 @@ def main():
 `------'`------'`------'`------'`------'`------'`------'`------'`------'`------'`------'`------'`------'
                                                                          
         """
-    print(banner)
+    for char in banner:
+        sys.stdout.write(f"{char}")
+        sys.stdout.flush()
+        time.sleep(0.0001)
 
     if args.query:
         run_grep_once()
@@ -70,8 +66,7 @@ def main():
         
     else:
         run_grep_once()
-        combined_data, source_types = process_data(args.permiso_intel, args.add_file, args.query, args.source_type, args.json_output, args.start_date, args.end_date, args.file_size)
-        generic_function(combined_data, source_types, args.json_output, args.start_date, args.end_date, args.file_size)
+        combined_data, source_types, intel = process_data(args.permiso_intel, args.add_file, args.query, args.source_type, args.json_output, args.start_date, args.end_date, args.file_size)
+        generic_function(combined_data, source_types, args.json_output, args.start_date, args.end_date, args.file_size, intel)
 if __name__ == "__main__":
-    check_for_updates()
     main()
