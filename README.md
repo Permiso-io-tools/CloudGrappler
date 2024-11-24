@@ -50,6 +50,11 @@ Modifying the source inside the queries.json file to a wildcard character (*) wi
         "cloudgrappler"
       ]
     }
+  ],
+ "GCP": [
+    {
+      "gcp_bucket": "buketi"
+    }
   ]
 }
 ```
@@ -83,10 +88,14 @@ reports
     │           └── testTrails/AWSLogs/00000000/CloudTrail/eu-east-1/2024/03/03
     │               └── GetFileDownloadUrls.*secrets_.json
     └── AZURE
+    │    └── 2024-03-04 01:01 AM
+    │        └── logs
+    │            └── cloudgrappler
+    │                └── okta_key.json
+    └── GCP
         └── 2024-03-04 01:01 AM
-            └── logs
-                └── cloudgrappler
-                    └── okta_key.json
+            └── buketi
+                    └── modified_firewall.json
 ```
 
 ## Example 4 - Filtering logs based on date or time
