@@ -130,3 +130,10 @@ The simplest way to authenticate with Azure is to first run:
 ``` az login ```
 
 This will open a browser window and prompt you to login to Azure.
+
+
+#### GCP ####
+You will need to create a service account and download the credentials file then set with:
+```
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/creds.json"
+```
