@@ -15,14 +15,6 @@ To optimize your utilization of CloudGrappler, we recommend using shorter time r
 >pip3 install -r requirements.txt
 >```
 
-## Cloning cloudgrep locally
-
-To clone the cloudgrep repository locally, run the clone.sh file. Alternatively, you can manually clone the repository into the same directory where CloudGrappler was cloned.
-
->```bash
->chmod +x clone.sh
->./clone.sh
->```
 
 ## Input
 
