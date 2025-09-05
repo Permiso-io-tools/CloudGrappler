@@ -15,31 +15,43 @@ def process_data(permiso_intel, add_file, new_query, source_type, json_output, s
 
                     for key, data_type in data_input.items():
                          service_type(data_type, new_query, json_output, key, start_date, end_date, file_size, intel)
-              
+
                 else:
                     data_type = data_input.get(source_type.upper(), [])
                     service_type(data_type, new_query, json_output, source_type, start_date, end_date, file_size, intel)
-        
+
         elif add_file:
             intel = load_json(add_file)
             if permiso_intel:
                 intel(intel)
             combined_data = {d["Query"]: d["Source"] for d in intel}
-      
             source_types = list(set(d["Source"].lower() for d in intel))
-            
-      
+
             return combined_data, source_types, intel
         else:
             intel = load_json('data/queries.json')
-       
 
             if permiso_intel:
                 intel(intel)
-         
+
             combined_data = {d["Query"]: d["Source"] for d in intel}
-            source_types = list(set(d["Source"].lower() for d in intel))
-           
+
+            # Extract all Source values (single string, string list or "*" value) form queries.json.
+            source_types = set()
+            for d in intel:
+                if type(d["Source"]) == list:
+                    for d2 in d["Source"]:
+                        source_types.add(d2.lower())
+                else:
+                    source_types.add(d["Source"].lower())
+
+            if "*" in source_types:
+                source_types.remove("*")
+                for key in load_json('data/data_sources.json').keys():
+                    source_types.add(key.lower())
+
+            source_types = list(source_types)
+
             return combined_data, source_types, intel
     except Exception as e:
         print(f"Something went wrong while reading the queries file {e}")
@@ -53,15 +65,14 @@ def generic_function(combined_data, source_types, json_output, start_date, end_d
         return
 
     for source_type in source_types:
-    
+
         queries = [key for key, value in combined_data.items() if str(value).lower() == source_type]
 
         source_dict = {source_type: queries}
-  
+
         for key, value in source_dict.items():
             clean_queries = ', '.join(f'"{i}"' for i in value).replace(' ', '') 
-            
-       
+
         if clean_queries:
             data_source(data_input, clean_queries, source_type, json_output, start_date, end_date, file_size, intel)
         else:
@@ -73,7 +84,7 @@ def data_source(data_input, queries, source_type, json_output , start_date, end_
         for key, data_type in data_input.items():
             service_type(data_type, queries, json_output, key, start_date, end_date, file_size, intel)
     else:
-        
+
         valid_source_types = ', '.join(f'"{i}"' for i in data_input.keys()).replace(' ', '')   
 
         data_type = data_input.get(source_type.upper(), [])
