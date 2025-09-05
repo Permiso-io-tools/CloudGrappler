@@ -11,6 +11,14 @@
       "bucket": "aws-kosova-us-east-1-00000000"
     }
   ],
+  "AWS_SALESFORCE_LOGS": [
+    {
+      "bucket": "cloudtrail-logs-00000000-abcdef",
+      "prefix": [
+        "salesforceLogs"
+      ]
+    }
+  ],
   "AZURE": [
     {
       "accountname": "logs",
