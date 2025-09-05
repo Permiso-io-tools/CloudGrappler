@@ -111,28 +111,6 @@
   },
   {
     "Name": "LLMHijacking Indicator",
-    "Query": "Python/3.12 aiohttp/3.9.3",
-    "Source": "AWS",
-    "Intel": {
-      "Type": "TTP",
-      "Value": "LLMJacking"
-    },
-    "Severity": "HIGH",
-    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
-  },
-  {
-    "Name": "LLMHijacking Indicator",
-    "Query": "Python/3.12 aiohttp/3.9.3",
-    "Source": "AWS",
-    "Intel": {
-      "Type": "TTP",
-      "Value": "LLMJacking"
-    },
-    "Severity": "HIGH",
-    "Description": "TTP used when attackers perform LLMJacking/LLMHijacking in AWS"
-  },
-  {
-    "Name": "LLMHijacking Indicator",
     "Query": "InvokeModelWithResponseStream",
     "Source": "AWS",
     "Intel": {
@@ -900,5 +878,137 @@
     },
     "Severity": "HIGH",
     "Description": "Review use of CloudShell. Permiso seldom witnesses use of CloudShell outside of known attackers.This however may be a part of your normal business use case."
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "Salesforce-Multi-Org-Fetcher/1.0",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_UserAgent"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "Salesforce-CLI/1.0",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_UserAgent"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "python-requests/2.32.4",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_UserAgent"
+    },
+    "Severity": "MEDIUM",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "Python/3.11 aiohttp/3.12.15",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_UserAgent"
+    },
+    "Severity": "MEDIUM",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "208.68.36.90",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_IP_DigitalOcean"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "44.215.108.109",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_IP_AWS"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT COUNT() FROM Account",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT COUNT() FROM Case",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT COUNT() FROM Opportunity",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT COUNT() FROM Users",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT Id, Username, Email, FirstName, LastName, Name, Title, CompanyName, Department, Division, Phone, MobilePhone, IsActive, LastLoginDate, CreatedDate, LastModifiedDate, TimeZoneSidKey, LocaleSidKey, LanguageLocaleKey, EmailEncodingKey FROM User WHERE IsActive = (:x|true) ORDER BY LastLoginDate DESC NULLS LAST LIMIT 20",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query_Retrieve_User_Data"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "Salesloft Drift Supply Chain Attack Indicator",
+    "Query": "SELECT Id, IsDeleted, MasterRecordId, CaseNumber, ContactId, AccountId, ParentId, SuppliedName, SuppliedEmail, SuppliedPhone, SuppliedCompany, Type, RecordTypeId, Status, Reason, Origin, Language, Subject, Priority, Description, IsClosed, ClosedDate, IsEscalated, HasCommentsUnreadByOwner, HasSelfServiceComments, CurrencyIsoCode, OwnerId, CreatedDate, CreatedById, LastModifiedDate, LastModifiedById, SystemModstamp, ContactPhone, ContactMobile, ContactEmail, ContactFax, Comments, LastViewedDate, LastReferencedDate, .+ FROM Case LIMIT 10000",
+    "Source": "AWS_SALESFORCE_LOGS",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "Salesloft_Drift_Supply_Chain_Attack_Salesforce_SOQL_Query_Retrieve_Case_Data"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
   }
 ]
