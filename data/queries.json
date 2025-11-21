@@ -1010,5 +1010,60 @@
     },
     "Severity": "HIGH",
     "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "GainSight Supply Chain Attack Indicator",
+    "Query": "52.203.252.39",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "GainSight_Supply_Chain_Attack_IP"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "GainSight Supply Chain Attack Indicator",
+    "Query": "34.234.28.149",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "GainSight_Supply_Chain_Attack_IP"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "GainSight Supply Chain Attack Indicator",
+    "Query": "34.225.86.95",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "GainSight_Supply_Chain_Attack_IP"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "GainSight Supply Chain Attack Indicator",
+    "Query": "18.211.252.246",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "GainSight_Supply_Chain_Attack_IP"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
+  },
+  {
+    "Name": "GainSight Supply Chain Attack Indicator",
+    "Query": "34.205.235.172",
+    "Source": "*",
+    "Intel": {
+      "Type": "TTP",
+      "Value": "GainSight_Supply_Chain_Attack_IP"
+    },
+    "Severity": "HIGH",
+    "Description": "TTP used when attackers perform signin and data exfiltration in Salesforce"
   }
 ]
